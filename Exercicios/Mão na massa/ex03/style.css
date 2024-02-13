@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.responsivo-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
