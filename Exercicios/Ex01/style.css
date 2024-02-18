@@ -22,7 +22,7 @@ strong.titulo {
     margin: 10% 15%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .apresentacao__conteudo{
@@ -45,7 +45,7 @@ strong.titulo {
 
 .apresentacao__links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .apresentacao__links__link{
