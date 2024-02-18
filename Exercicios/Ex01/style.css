@@ -46,6 +46,7 @@ strong.titulo {
 .apresentacao__links{
     display: flex;
     justify-content: space-around;
+
 }
 
 .apresentacao__links__link{
