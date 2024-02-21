@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-quarternaria: #272727;
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,8 +18,8 @@
 
 body{
     /* height: 100vh; */
-    background-color: black;
-    color: #f6f6f6;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     box-sizing: border-box;
 }
 
@@ -31,12 +40,12 @@ body{
 
 .apresentacao__conteudo__titulo{
     font-size: 36px;
-    font-family: "Krona One", sans-serif;;
+    font-family: var(--fonte-primaria);
     
 }
 
 strong.titulo {
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .cabecalho{
@@ -49,16 +58,16 @@ strong.titulo {
 }
 
 .cabecalho__menu__link{
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 600;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .apresentacao__conteudo__texto{
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links{
@@ -72,7 +81,7 @@ strong.titulo {
 }
 
 .apresentacao__links__subtitulo{
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 24px;
 }
@@ -84,14 +93,14 @@ strong.titulo {
     gap: 16px;
     justify-content: center;
     
-    color: white;
-    border: #22D4FD 2px solid;
+    color: var(--cor-secundaria);
+    border: var(--cor-terciaria) 2px solid;
     width: 378px;
     text-decoration: none;
     text-align: center;
     border-radius: 8px;
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     padding: 21.5px 0px;
 
@@ -99,15 +108,15 @@ strong.titulo {
 
 .apresentacao__links__link:hover{
     cursor: pointer;
-    background-color: #272727;
+    background-color: var(--cor-quarternaria);
     padding: 5%;
 }
 
 footer{
-    background-color: #22D4FD;
-    color: black;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria)
     padding: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     text-align: center;
 }
