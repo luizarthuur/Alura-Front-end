@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root{
+    --cor-nav: rgb(170, 28, 28);
+    --cor-footer: rgb(170, 28, 28);
+    --cor-fonte: white;
+    --cor-filmes: rgb(221, 221, 42);
+}
+
+body{
+    height: 100vh;
+    /* background-image: linear-gradient(to top, black, red); */
+    background-image: url("Imagens/Imagens/Imagens originais/Plano de fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.navegacao{
+    background-color: var(--cor-nav);
+    padding: 1.5%;
+    box-sizing: border-box;
+    height: 20%;
+    display: block;
+    box-shadow: 1px 1px black;
+    margin-bottom: 1.5%;
+    font-family: "Kode Mono", monospace;
+    
+}
+
+.nav__itens{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    gap: 1%;
+
+}
+
+.nav__link{
+    color: var(--cor-fonte);
+    text-decoration: none;
+    font-size: 130%;
+    color: var(--cor-fonte);
+    text-shadow: 1px 1px black;
+}
+
+header{
+    margin: -0.4%;
+}
+
+.titulo__nav{
+    color: var(--cor-fonte);
+    text-shadow: 2px 2px black;
+    font-size: 45px;
+    display: inline;
+}
+
+
+.main__filmes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+
+}
+
+.nomes__filmes{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2%;
+}
+
+.nomes__filmes__nomes{
+    color: var(--cor-filmes);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px black;
+
+}
+
+.img__filmes:hover{
+    border: 1px solid yellow;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+p#inception{
+    transform: translateX(150px);
+}
+
+p#matrix{
+    transform: translateX(150px);
+}
+
+p#V-de-vinganca{
+    transform: translateX(115px);
+}
+
+p#pulp-fiction{
+    transform: translateX(65px);
+}
+
+p#vingadores-guerra-infinita{
+    transform: translateX(-70px);
+}
+
+.rodape{
+    background-color: var(--cor-footer);
+    font-size: 24px;
+    text-align: center;
+    font-family: "Kode Mono", monospace;
+    color: white;
+    text-shadow: 1px 1px black;
+    position: absolute;
+    bottom:0;
+    width:99.2%;
+    height:8%;
+    margin: auto auto;
+    margin-bottom: -1.5%;
+    margin-left: -0.2%;
+    padding: 10px 5px;
+}
+
