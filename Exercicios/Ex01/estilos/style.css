@@ -29,17 +29,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 82px;
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
     
 }
@@ -59,14 +60,14 @@ strong.titulo {
 
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -83,10 +84,10 @@ strong.titulo {
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
     /* background-color: #22D4FD; */
     display: flex;
     align-items: center;
@@ -95,28 +96,54 @@ strong.titulo {
     
     color: var(--cor-secundaria);
     border: var(--cor-terciaria) 2px solid;
-    width: 378px;
+    width: 50%;
     text-decoration: none;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
     padding: 21.5px 0px;
 
 }
 
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     cursor: pointer;
     background-color: var(--cor-quarternaria);
     padding: 5%;
 }
 
+.apresentacao__imagem{
+    width: 45%;
+}
+
 footer{
     background-color: var(--cor-terciaria);
-    color: var(--cor-primaria)
+    color: var(--cor-primaria);
     padding: 24px;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+
 }

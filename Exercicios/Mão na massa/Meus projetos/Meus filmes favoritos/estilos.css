@@ -11,8 +11,8 @@
 
 body{
     height: 100vh;
-    /* background-image: linear-gradient(to top, black, red); */
-    background-image: url("Imagens/Imagens/Imagens originais/Plano de fundo.jpg");
+    /* background-image: linear-gradient(to bottom, black, rgb(121, 50, 50), red);  */
+    background-image: url("Imagens/Imagens/Imagens originais/Plano de fundo.jpg"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
