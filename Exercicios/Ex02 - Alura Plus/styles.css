@@ -124,3 +124,24 @@ body{
     color: var(--branco-principal);
 }
 
+.dispositivos{
+    text-align: center;
+    margin-top: 20em;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 100vh;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+}
+
+.lista__item{
+    font-size: 32px;
+    color: var(--branco-principal);
+}
