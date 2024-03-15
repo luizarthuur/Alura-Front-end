@@ -155,7 +155,7 @@ body{
     list-style-type: none;
     justify-content: center;
     gap: 1.3rem;
-    margin: 2rem 0;
+    margin-top: 2rem;
 }
 
 .rodape__div__imagem{
@@ -169,6 +169,19 @@ body{
 
 .rodape__texto{
     color: var(--cinza-secundario);
-    margin: 1rem 15rem;
+    margin: 2rem 15rem;
     text-align: center;
+}
+
+.lista__link > a:hover{
+    cursor: pointer;
+    color: var(--botao-azul)
+}
+
+.lista__link > a:active{
+    color: purple;
+}
+
+.container__botao:hover{
+    color: black;
 }
