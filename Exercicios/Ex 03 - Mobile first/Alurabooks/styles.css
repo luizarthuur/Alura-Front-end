@@ -21,5 +21,9 @@ body{
 .container{
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 20px;
+}
+
+.cabecalho__menu-hamburguer{
+    margin: 0 8px 0 13px;
 }
