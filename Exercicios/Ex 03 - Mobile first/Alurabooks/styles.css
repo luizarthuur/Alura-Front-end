@@ -5,6 +5,8 @@
 :root{
     --cor-de-fundo: #ebecee;
     --branco-fundo: #ffffff;
+    --laranja-fonte: #EB9B00;
+    --azul-degrade: #002F52;
 
 }
 
@@ -16,6 +18,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container{
@@ -27,3 +30,32 @@ body{
 .cabecalho__menu-hamburguer{
     margin: 0 8px 0 13px;
 }
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 65vw;
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco-fundo);
+}
+
+.lista-menu__titulo{
+    color: var(--laranja-fonte);
+    font-weight: bold;
+}
+
+.lista-menu__item{
+    color: var(--azul-degrade);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
