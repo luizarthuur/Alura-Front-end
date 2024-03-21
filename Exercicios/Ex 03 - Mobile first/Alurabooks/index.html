@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alurabooks</title>
+    
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -44,6 +50,47 @@
         <input type="search" name="pesquisa" id="banner__pesquisa" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
 
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">Novos Lançamentos</h2>
+        <!-- Slider main container -->
+
+        <div class="swiper-pagination"></div>
+ 
+        <div class="swiper">
+    <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="../src/Liderança.svg" alt=""></div>
+            <div class="swiper-slide"><img src="../src/ApacheKafka.svg" alt=""></div>
+            <div class="swiper-slide"><img src="../src/Javascript.svg" alt=""></div>
+            <div class="swiper-slide"><img src="../src/Portugol.svg" alt=""></div>
+            <div class="swiper-slide"><img src="../src/Acessibilidade.svg" alt=""></div>
+
+            ...
+            </div>
+            <!-- If we need pagination -->
+
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        }
+        });
+    </script>
 </body>
 
 </html>
