@@ -8,3 +8,51 @@
 .cabecalho{
     background-color: var(--branco-fundo);
 }
+
+.container__titulo{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    
+    .container__titulo{
+        font-family: var(--fonte-titulo);
+        font-weight: 400;
+        display: block;
+
+    }
+
+    .container__titulo-negrito{
+        font-family: var(--fonte-titulo);
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: block;
+        display: flex;
+        gap: 40px;
+    }
+
+    .opcoes__item{
+        text-transform: uppercase;
+    }
+
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--azul-fonte);
+        font-weight: 400;
+    }
+
+    .opcoes__botao:checked~.lista-menu{
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao{
+        display: none;
+    }
+}
