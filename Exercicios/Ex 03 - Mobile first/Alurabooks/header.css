@@ -17,6 +17,11 @@
     display: none;
 }
 
+.container__texto{
+    display: none;
+}
+
+
 @media screen and (min-width: 1024px){
     
     .container__titulo{
@@ -54,5 +59,28 @@
 
     .opcoes__botao{
         display: none;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .container__link{
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+        gap: 10px;
+        text-decoration: none;
+    }
+
+    .cabecalho{
+        padding: 0.2em;
+    }
+
+    .opcoes{
+        margin-right: auto;
+        margin-left: 2em;
+    }
+    
+    .container__texto{
+        display: block;
     }
 }
