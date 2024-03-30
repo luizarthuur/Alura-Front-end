@@ -71,14 +71,10 @@
     }
     
     .banner__pesquisa::placeholder{
-        background-position: 10em;
+        background-position: 15em;
     }
 
     .banner{
         padding: 5em 0;
-    }
-
-    .rodape{
-        background-color: red;
     }
 }
