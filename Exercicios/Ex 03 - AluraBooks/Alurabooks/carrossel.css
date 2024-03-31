@@ -55,6 +55,10 @@
         width: 35em;
         margin: 2em auto;
     }
+
+    .carrossel__container{
+        margin: 0 20vw 3em 20vw;
+    }
 }
 
 @media screen and (min-width:1728px) {
